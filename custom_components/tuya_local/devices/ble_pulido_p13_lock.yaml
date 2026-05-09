@@ -26,13 +26,13 @@ entities:
         type: integer
         optional: true
         persist: false
-      - id: 47 # Lock motor state
+      - id: 47  # Lock motor state
         name: lock_state
         type: boolean
         mapping:
-          - dps_val: true # Unlocked
+          - dps_val: true  # Unlocked
             value: false
-          - dps_val: false # Locked
+          - dps_val: false  # Locked
             value: true
       - id: 61
         type: base64
@@ -42,7 +42,7 @@ entities:
         name: unlock_temporary
         type: integer
         optional: true
-        persist: false        
+        persist: false
       - id: 62
         name: unlock_phone_remote
         type: integer
@@ -208,3 +208,4 @@ entities:
       - id: 64
         type: string
         name: sensor
+        optional: true
